@@ -1,25 +1,171 @@
-{% extends 'base.html'%}
-{% block navbar %}
-    <nav class="navbar navbar-expand-sm bg-light">
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-  <div class="container-fluid">
-    <!-- Links -->
+    <meta charset="UTF-8">
+    <title>HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<style>
+    ul li{list-style-type: none;display: inline-block}
+</style>
+</head>
+<body>
+<hr class="bg-danger " >
+<div class="text-center ">
+<ul class="list-inline" >
+    <li><img src="https://www.emobilis.ac.ke/images/logo.jpg" alt=""> </li>
+    <li class="text-danger">Technology</li>
+    <li class="text-primary">Innovation</li>
+    <li class="text-success">Entrepreneurship</li>
+    <li class="text-danger">@Emobilis</li>
+    <li><a href="https://www.emobilis.ac.ke/new/student"> <img src="https://www.emobilis.ac.ke/images/enroll_button.jpg" alt=""></a>  </li>
+</ul>
+</div>
+<hr>
+<div class="sticky-top">
+<nav class="navbar navbar-expand-sm bg-light navbar-light ">
+  <div class="container text-secondary p-2 text-center">
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="#">Link 1</a>
+        <a class="nav-link active" href="#">HOME</a>
+      </li>
+     <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT US</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link 2</a>
+        <a class="nav-link" href="#">COURSES</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Link 3</a>
+        <a class="nav-link" href="#">INTAKE</a>
       </li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">MOBIGIRLZ</a>
+      </li>
+       <li class="nav-item dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">PROGRAMS</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="https://www.emobilis.ac.ke/ajira">Ajira Digital</a></li> <br>
+    <li><a class="dropdown-item" href="https://www.emobilis.ac.ke/googlehustleacademy">Google Hustle Academy</a></li>
+    <li><a class="dropdown-item" href="https://www.emobilis.ac.ke/about">Corporate Trading Programs</a></li>
+      <li><a class="dropdown-item" href="https://www.emobilis.ac.ke/bootcamps">Universities and colleges Coding Bootcamps</a></li>
+      <li><a class="dropdown-item" href="https://www.emobilis.ac.ke/about">Hackathons and Innovation Challenges</a></li>
+      <li><a class="dropdown-item" href="https://www.emobilis.ac.ke/#">Africa Code Week</a></li>
+  </ul>
+
+</li>
+        <li class="nav-item">
+        <a class="nav-link" href="#">BPO</a>
+      </li>
+        <li class="nav-item">
+        <a class="nav-link " href="#">CONTACT US</a>
+      </li>
+
     </ul>
+      </div>
+  </div>
+</nav>
+</div>
+<hr>
+
+<!-- Carousel -->
+<div id="demo" class="carousel slide container" data-bs-ride="carousel">
+
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
   </div>
 
-</nav>
-{% endblock %}
-{% block content %}
-<p>I am in the home page</p>
-{% endblock %}
+  <!-- The slideshow/carousel -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://www.emobilis.ac.ke/images/sliders/slide_7.jpg" alt="blue emobilis image" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.emobilis.ac.ke/images/sliders/slidera3.jpg" alt="graduates" class="d-block w-100">
+    </div>
+    <div class="carousel-item">
+      <img src="https://www.emobilis.ac.ke/images/sliders/slidera2.jpg" alt="emobilis 3" class="d-block w-100">
+    </div>
+      <div class="carousel-item">
+      <img src="https://www.emobilis.ac.ke/images/sliders/slide_4.jpg" alt="emobilis 4" class="d-block w-100">
+    </div>
+      <div class="carousel-item">
+      <img src="https://www.emobilis.ac.ke/images/sliders/slide_5.jpg" alt="emobilis5" class="d-block w-100">
+    </div>
+      <div class="carousel-item">
+      <img src="https://www.emobilis.ac.ke/images/sliders/slide_6.jpg" alt="emobilis 6" class="d-block w-100">
+    </div>
+      <div class="carousel-item">
+      <img src="https://www.emobilis.ac.ke/images/sliders/slidera1.jpg" alt="emobilis 7" class="d-block w-100">
+    </div>
+  </div>
 
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+<hr>
+<div class="text-center container">
+    <h1>Welcome to eMobilis Technology Training Institute</h1>
+    <h3>WE HAVE TRAINED THE BEST AND FOR COMPANIES LIKE</h3>
+    <ul  >
+        <li class="m-2 p-2"><img src="https://www.emobilis.ac.ke/images/logos/google.png" width="200" height="100" alt=""></li>
+        <li class="m-2 p-2"><img src="https://www.emobilis.ac.ke/images/logos/safaricom.png" width="200" height="100" alt=""></li>
+        <li class="m-2 p-2"><img src="https://www.emobilis.ac.ke/images/logos/microsoft.png" width="200" height="100" alt=""></li>
+        <li class="m-2 p-2"><img src="https://www.emobilis.ac.ke/images/logos/knatcom.png" width="200" height="100" alt=""></li>
+    </ul>
+    <p>
+        Regardless of your background, you can acquire digital skills that are in demand by employers and clients. Web and app developers have some of the highest-paying jobs that don't require a college degree. Join eMobilis, the leading software development school in Nairobi, and learn web & mobile app development among other useful digital skills.
+    </p>
+</div>
+<hr>
+<div class=" row text-center bg-secondary ">
+    <div class="col container bg-light">
+        <img src="Screenshot 2024-03-01 at 10-03-06 Home.png" height="136" width="274" alt="">
+        <h2>Android</h2>
+        <p>
+            At eMobilis training school, you will learn how to develop apps for Android devices. The course is designed to take you from a novice android programmer to an expert with hard work and dedication.
+        </p>
+    </div>
+    <div class="col container bg-light">
+        <img src="Screenshot 2024-03-01 at 10-03-58 Home.png" height="136" width="274" alt="">
+        <h2>Full Stack</h2>
+        <p>
+            At eMobilis, we offer a Full Stack Development course that equips learners with the knowledge and skills to develop robust web and mobile applications. Through the course, you will gain proficiency in developing and deploying fully functional web and mobile applications.
+        </p>
+    </div>
+    <div class="col container bg-light">
+        <img src="https://www.emobilis.ac.ke/images/logos/python.png" height="136" width="274" alt="">
+        <h2>Python</h2>
+        <p>
+            eMobilis Python development training course is designed to equip learners with the skills and knowledge necessary to develop Python-based applications and websites. Learners will be able to develop a wide range of outputs, including web applications, games, and automation scripts.
+        </p>
+    </div>
+    <div class="col container bg-light">
+    <img src="Screenshot 2024-03-01 at 10-04-46 Home.png" height="136" width="274" alt="">
+        <h2>Data Science</h2>
+    <p>
+        eMobilis’ Data Science course is designed to equip learners with the necessary skills to extract insights and knowledge from structured and unstructured data. The course covers the fundamentals of statistics, data analysis, machine learning, and data visualisation.
+    </p>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
