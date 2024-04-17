@@ -1,3 +1,5 @@
+from urllib import request
+
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.template import loader
@@ -30,15 +32,20 @@ def login(request):
 
 @csrf_exempt
 def regpage(request):
-    if request.method=='post':
-        first_name=request.post.get('fname')
-        last_name= request.post.get('lname')
-        date_of_birth=request.post.get('age')
-        password = request.post.get('pass')
-        email= request.post.get('email')
+    if request.method=='POST':
+        first_name=request.POST.get('fname')
+        last_name= request.POST.get('lname')
+        date_of_birth=request.POST.get('age')
+        password = request.POST.get('pass')
+        email= request.POST.get('email')
         mydata={'first_name':first_name,'last_name':last_name,'email':email,'password':password,'date_of_birth':date_of_birth}
         print(mydata)
 
         query=registration(first_name=first_name,last_name=last_name,date_of_birth=date_of_birth,email=email,password=password)
         query.save()
-    return render(request, 'home.html')
+
+        data=registration.objects.all()
+        context={'data':data}
+    return render(request, 'register.html',context)
+
+
